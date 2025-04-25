@@ -127,6 +127,22 @@ body {
   cursor: pointer;
 }
 
+/* DifferentContent Styles */
+
+.different-content {
+  border-radius: 12px;
+  padding: 3.2rem;
+
+  background-color: #edf2ff;
+}
+
+.different-content__title {
+  margin-bottom: 1.6rem;
+
+  font-size: 2rem;
+  color: #364fc7;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128

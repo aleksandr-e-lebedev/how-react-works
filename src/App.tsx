@@ -84,6 +84,16 @@ function TabContent({ item }: TabContentProps) {
   );
 }
 
+function DifferentContent() {
+  return (
+    <div className="different-content">
+      <h4 className="different-content__title">
+        I&apos;m a DIFFERENT tab, so I reset state 💣💥
+      </h4>
+    </div>
+  );
+}
+
 interface TabProps {
   num: number;
   activeTab: number;
