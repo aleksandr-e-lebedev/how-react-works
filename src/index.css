@@ -44,6 +44,89 @@ body {
   background-color: #364fc7;
 }
 
+/* TabContent Styles */
+
+.tab-content {
+  border-radius: 12px;
+  padding: 3.2rem;
+
+  background-color: #edf2ff;
+}
+
+.tab-content__title {
+  margin-bottom: 1.6rem;
+
+  font-size: 2rem;
+  color: #364fc7;
+}
+
+.tab-content__details {
+  font-size: 1.8rem;
+}
+
+.tab-content__actions {
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-content__action {
+  border: none;
+
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #4c6ef5;
+
+  background: none;
+  cursor: pointer;
+}
+
+.tab-content__hearts-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.tab-content__hearts-count {
+  font-size: 1.6rem;
+}
+
+.tab-content__hearts-action {
+  padding: 0.4rem 0.6rem;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #fff;
+
+  background-color: #f03e3e;
+  cursor: pointer;
+}
+
+.tab-content__undo {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tab-content__undo-button {
+  padding: 0.6rem 1.2rem;
+
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  color: #fff;
+
+  background-color: #364fc7;
+  cursor: pointer;
+}
+
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 128
