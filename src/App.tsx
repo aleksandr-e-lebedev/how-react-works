@@ -12,11 +12,11 @@ interface TabContentProps {
 }
 
 function TabContent({ item }: TabContentProps) {
-  const showDetails = true;
+  const [showDetails, setShowDetails] = useState(true);
   const likes = 0;
 
   function handleToggleDetails() {
-    return;
+    setShowDetails(!showDetails);
   }
 
   function handleIncrementLikes() {
