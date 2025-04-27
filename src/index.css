@@ -19,6 +19,15 @@ body {
   padding: 4.8rem 9.6rem;
 }
 
+/* Tabbed Styles */
+
+.tabbed__tabs {
+  margin-bottom: 0.8rem;
+
+  display: flex;
+  gap: 0.8rem;
+}
+
 /* Tab Styles */
 
 .tab {

@@ -1,3 +1,7 @@
+import { useState } from 'react';
+
+import { data } from './data';
+
 interface ItemType {
   summary: string;
   details: string;
@@ -114,10 +118,38 @@ function Tab({ num, activeTab, onActivateTab }: TabProps) {
   );
 }
 
+interface TabbedProps {
+  content: ItemType[];
+}
+
+function Tabbed({ content }: TabbedProps) {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const currentItem = content.at(activeTab);
+  const tabContentIsActive = activeTab <= 2 && currentItem !== undefined;
+
+  return (
+    <div className="tabbed">
+      <div className="tabbed__tabs">
+        <Tab num={0} activeTab={activeTab} onActivateTab={setActiveTab} />
+        <Tab num={1} activeTab={activeTab} onActivateTab={setActiveTab} />
+        <Tab num={2} activeTab={activeTab} onActivateTab={setActiveTab} />
+        <Tab num={3} activeTab={activeTab} onActivateTab={setActiveTab} />
+      </div>
+
+      {tabContentIsActive ? (
+        <TabContent key={currentItem.summary} item={currentItem} />
+      ) : (
+        <DifferentContent />
+      )}
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <div className="app">
-      <h1>How React Works</h1>
+      <Tabbed content={data} />
     </div>
   );
 }
