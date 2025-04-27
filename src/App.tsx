@@ -30,7 +30,8 @@ function TabContent({ item }: TabContentProps) {
   }
 
   function handleUndo() {
-    return;
+    setShowDetails(true);
+    setLikes(0);
   }
 
   function handleUndoLater() {
