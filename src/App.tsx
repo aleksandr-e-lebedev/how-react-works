@@ -24,7 +24,9 @@ function TabContent({ item }: TabContentProps) {
   }
 
   function handleTrippleIncrementLikes() {
-    return;
+    setLikes((l) => l + 1);
+    setLikes((l) => l + 1);
+    setLikes((l) => l + 1);
   }
 
   function handleUndo() {
