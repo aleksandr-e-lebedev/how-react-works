@@ -35,7 +35,7 @@ function TabContent({ item }: TabContentProps) {
   }
 
   function handleUndoLater() {
-    return;
+    setTimeout(handleUndo, 2_000);
   }
 
   return (
